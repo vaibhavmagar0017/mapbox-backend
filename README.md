@@ -1,1 +1,1 @@
-# open terminal and run python src
+# open terminal and run command: python src
