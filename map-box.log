@@ -3696,3 +3696,30 @@ fastapi.exceptions.ResponseValidationError: 1 validation errors:
 
 [2024-10-11 15:10:58,021] [172953] [INFO] [65b9e9ad-7a9b-4007-84b3-fa2b7a6a64e3] [sqlalchemy.engine.Engine] [generated in 0.00009s] ()
 [2024-10-11 15:10:58,021] [172953] [INFO] [65b9e9ad-7a9b-4007-84b3-fa2b7a6a64e3] [sqlalchemy.engine.Engine] ROLLBACK using DBAPI connection.rollback(), DBAPI should ignore due to autocommit mode
+[2024-10-11 15:41:05,872] [176391] [INFO] [None] [base.settings] Allowing Origins {'http://127.0.0.1:3000'}
+[2024-10-11 15:41:05,872] [176391] [DEBUG] [None] [inject] Created a runtime binding for key=<class 'base.settings.CoreSettings'>, instance=app_title='Map Box Application' app_version='1.0.0' api_version='v1' app_description='This is the map box application.' app_port=8080 app_host='127.0.0.1' db_host='localhost' db_user='postgres' db_password='postgres' db_name='map_box' db_port=5432 database_url='postgresql: // postgres: postgres @ localhost / map_box' log_file='map-box.log' root_path='/api' app_env='LOCAL' cors_origins_csv='http://127.0.0.1:3000' cors_origins={'http://127.0.0.1:3000'} current_env='LOCAL'
+[2024-10-11 15:41:05,872] [176391] [DEBUG] [None] [asyncio] Using selector: EpollSelector
+[2024-10-11 15:41:18,468] [176391] [DEBUG] [f7656b41-8cf5-4c81-b00c-95d2a0a580ce] [src.repository.query_repository] Finding dummy in src.repository.queries.*
+[2024-10-11 15:41:18,469] [176391] [INFO] [f7656b41-8cf5-4c81-b00c-95d2a0a580ce] [src.repository.query_repository] Found dummy in src.repository.queries.*
+[2024-10-11 15:41:18,469] [176391] [INFO] [f7656b41-8cf5-4c81-b00c-95d2a0a580ce] [src.repository.query_repository] Executing query: dummy
+[2024-10-11 15:41:18,469] [176391] [DEBUG] [f7656b41-8cf5-4c81-b00c-95d2a0a580ce] [src.repository.query_repository] sql query: 
+    SELECT first_name, last_name, email, hire_date, salary, employee_id
+    FROM employees
+
+[2024-10-11 15:41:18,469] [176391] [DEBUG] [f7656b41-8cf5-4c81-b00c-95d2a0a580ce] [src.repository.query_repository] SQl Parameters: None
+[2024-10-11 15:41:18,499] [176391] [INFO] [f7656b41-8cf5-4c81-b00c-95d2a0a580ce] [sqlalchemy.engine.Engine] select pg_catalog.version()
+[2024-10-11 15:41:18,500] [176391] [INFO] [f7656b41-8cf5-4c81-b00c-95d2a0a580ce] [sqlalchemy.engine.Engine] [raw sql] ()
+[2024-10-11 15:41:18,501] [176391] [INFO] [f7656b41-8cf5-4c81-b00c-95d2a0a580ce] [sqlalchemy.engine.Engine] select current_schema()
+[2024-10-11 15:41:18,501] [176391] [INFO] [f7656b41-8cf5-4c81-b00c-95d2a0a580ce] [sqlalchemy.engine.Engine] [raw sql] ()
+[2024-10-11 15:41:18,501] [176391] [INFO] [f7656b41-8cf5-4c81-b00c-95d2a0a580ce] [sqlalchemy.engine.Engine] show standard_conforming_strings
+[2024-10-11 15:41:18,501] [176391] [INFO] [f7656b41-8cf5-4c81-b00c-95d2a0a580ce] [sqlalchemy.engine.Engine] [raw sql] ()
+[2024-10-11 15:41:18,502] [176391] [INFO] [f7656b41-8cf5-4c81-b00c-95d2a0a580ce] [sqlalchemy.engine.Engine] BEGIN (implicit; DBAPI should not BEGIN due to autocommit mode)
+[2024-10-11 15:41:18,502] [176391] [INFO] [f7656b41-8cf5-4c81-b00c-95d2a0a580ce] [sqlalchemy.engine.Engine] 
+    SELECT first_name, last_name, email, hire_date, salary, employee_id
+    FROM employees
+
+[2024-10-11 15:41:18,502] [176391] [INFO] [f7656b41-8cf5-4c81-b00c-95d2a0a580ce] [sqlalchemy.engine.Engine] [generated in 0.00007s] ()
+[2024-10-11 15:41:18,503] [176391] [INFO] [f7656b41-8cf5-4c81-b00c-95d2a0a580ce] [sqlalchemy.engine.Engine] ROLLBACK using DBAPI connection.rollback(), DBAPI should ignore due to autocommit mode
+[2024-10-11 16:26:26,005] [179196] [INFO] [None] [base.settings] Allowing Origins {'http://127.0.0.1:3000'}
+[2024-10-11 16:26:26,005] [179196] [DEBUG] [None] [inject] Created a runtime binding for key=<class 'base.settings.CoreSettings'>, instance=app_title='Map Box Application' app_version='1.0.0' api_version='v1' app_description='This is the map box application.' app_port=8080 app_host='127.0.0.1' db_host='localhost' db_user='postgres' db_password='postgres' db_name='map_box' db_port=5432 database_url='postgresql: // postgres: postgres @ localhost / map_box' log_file='map-box.log' root_path='/api' app_env='LOCAL' cors_origins_csv='http://127.0.0.1:3000' cors_origins={'http://127.0.0.1:3000'} current_env='LOCAL'
+[2024-10-11 16:26:26,006] [179196] [DEBUG] [None] [asyncio] Using selector: EpollSelector
